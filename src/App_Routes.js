@@ -1,6 +1,6 @@
 const App_Routes = {
   default: "/portfolio_2/about",
-  ROOT: "/portfolio_2",
+  ROOT: "/",
   ABOUT: "/portfolio_2/about",
   SKILLS: "/portfolio_2/skills",
   EDUCATION: "/portfolio_2/education",
