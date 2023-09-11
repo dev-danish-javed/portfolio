@@ -1,0 +1,14 @@
+.progress-bar {
+    background-color: var(--accent-shadow);
+}
+
+.progress {
+    --bs-progress-height: 0.5rem;
+    --bs-progress-bg: #c5cfbca7;
+}
+
+.arrow {
+    animation: back-forth 1s alternate-reverse infinite;
+    vertical-align: text-bottom;
+    font-weight: bolder;
+}

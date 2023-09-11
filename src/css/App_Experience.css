@@ -1,0 +1,28 @@
+.experience-component img {
+    mix-blend-mode: color-burn;
+    width: 10rem;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border: 3px solid red;
+}
+
+.companies-tabs .company-tab.active {
+    color: var(--accent-color);
+    font-weight: bold;
+    border-bottom: 0.2rem solid var(--accent-color);
+}
+
+.companies-tabs .company-tab.active button {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.02rem;
+}
+
+.companies-tabs .company-tab button {
+    color: var(--page-default-color);
+}
+
+.projects-button.active-project {
+    font-size: 1.1rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem var(--accent-color);
+}

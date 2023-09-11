@@ -1,0 +1,22 @@
+.service-icon {
+    font-size: 0.5rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    border-radius: 35%;
+    background-image: linear-gradient(135deg, rgba(76, 119, 83, 0.5) 10%, rgba(255, 255, 255, 0) 60%);
+}
+
+.service-description {
+    color: #464646d5;
+    ;
+}
+
+.pngIcon {
+    height: 4rem;
+}
+
+.border-dotted-bottom {
+    border-bottom: 2px dotted darkgray;
+    margin-bottom: 0.3rem;
+}

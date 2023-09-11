@@ -1,0 +1,104 @@
+.skill_progress{
+    --value: 25;
+    --originalValue:var(--value);
+}
+.skill_progress .skill-bg{
+    height: 9rem;
+    width: 9rem;    
+    background-image: conic-gradient(var(--accent-shadow) 0deg, var(--accent-shadow) calc(360deg* var(--value)/100),transparent calc(360deg* var(--value)/100), transparent 360deg);
+    animation: skillProgress  linear 500ms 1 alternate;
+}
+@keyframes skillProgress {
+    0%{
+        --value:0;
+    }
+    5%{
+        --value:calc(var(--originalValue)*0.05);
+    }
+    10%{
+        --value:calc(var(--originalValue)*0.1);
+    }
+    15%{
+        --value:calc(var(--originalValue)*0.15);
+    }
+    20%{
+        --value:calc(var(--originalValue)*0.2);
+    }
+    25%{
+        --value:calc(var(--originalValue)*0.25);
+    }
+    30%{
+        --value:calc(var(--originalValue)*0.3);
+    }
+    35%{
+        --value:calc(var(--originalValue)*0.35);
+    }
+    40%{
+        --value:calc(var(--originalValue)*0.4);
+    }
+    45%{
+        --value:calc(var(--originalValue)*0.45);
+    }
+    50%{
+        --value:calc(var(--originalValue)*0.5);
+    }
+    55%{
+        --value:calc(var(--originalValue)*0.55);
+    }
+    60%{
+        --value:calc(var(--originalValue)*0.60);
+    }
+    65%{
+        --value:calc(var(--originalValue)*0.65);
+    }
+    70%{
+        --value:calc(var(--originalValue)*0.7);
+    }
+    75%{
+        --value:calc(var(--originalValue)*0.75);
+    }
+    80%{
+        --value:calc(var(--originalValue)*0.8);
+    }
+    85%{
+        --value:calc(var(--originalValue)*0.85);
+    }
+    90%{
+        --value:calc(var(--originalValue)*0.9);
+    }    
+    95%{
+        --value:calc(var(--originalValue)*0.95);
+    }
+    100%{
+        --value:var(--originalValue);
+    }
+}
+
+.skill_progress .skill-fg{
+    background: rgba(254, 255, 249, 0.93);
+    box-shadow: 0 0 1rem var(--accent-shadow);
+    height: 7rem;
+    width: 7.2rem;
+    backdrop-filter: blur(5rem);
+}
+.skill_progress .skill-fg img{
+    height: 3rem;
+    /* filter: drop-shadow(0 0 0.15rem var(--accent-shadow)); */
+}
+
+@media all and (max-width: 600px) {
+    
+    .skill_progress .skill-bg{
+        height: 7.5rem;
+        width: 7.5rem;        
+    }
+    
+    .skill_progress .skill-fg{        
+        height: 6rem;
+        width: 6rem;
+    }
+    .skill_progress .skill-fg img{
+        height: 2rem;
+    }
+  }
+  

@@ -1,0 +1,6 @@
+.b-tech {
+  background: rgb(208, 237, 214);
+  background: radial-gradient(circle,
+      #d0edd676 29%,
+      rgba(255, 242, 192, 0) 100%);
+}

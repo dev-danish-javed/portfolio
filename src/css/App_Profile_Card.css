@@ -1,0 +1,53 @@
+.profile-card {
+    box-shadow: -1rem -1rem 0rem var(--accent-shadow), 1rem 0 2rem black;
+    width: 35vw;
+}
+
+.profile-card .profile-image-container {
+    background: rgb(200, 202, 199);
+    background: radial-gradient(circle, rgba(200, 202, 199, 1) 0%, rgba(147, 147, 147, 1) 62%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.profile-card a {
+    color: black;
+    text-decoration: none;
+}
+
+.profile-card img {
+    height: 50vh;
+    filter: drop-shadow(-1rem 0 1rem rgba(0, 0, 0, 0.5));
+    transform: translateX(-1rem);
+}
+
+.profile-card .name {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.about-redirect-button a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.about-redirect-button .fa-arrow-right {
+    animation: back-forth 1s alternate-reverse infinite;
+    vertical-align: text-bottom;
+}
+
+@media all and (max-width:800px) {
+
+    .profile-card {
+        box-shadow: -1rem -1rem 0rem var(--accent-shadow), 1rem 0 2rem black;
+        width: 100vw;
+    }
+
+    .profile-card img {
+        height: 55vh;
+    }
+
+    .profile-card .name {
+        font-weight: 300;
+        font-size: 3rem;
+    }
+}
