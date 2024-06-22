@@ -28,7 +28,7 @@ function App() {
   let [isMobile,setIsMobile]=useState(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
   
   let resizeObserver=new ResizeObserver(entries=>{
-    setIsMobile(window.screen.width <800);
+    setIsMobile(window.screen.width <850);
   });
   resizeObserver.observe(document.body);
   const handleMenuChange = (route) => {
@@ -60,6 +60,20 @@ function App() {
           <div className="mt-3 mt-lg-0 rounded-3 align-self-center overflow-hidden">
             <div className="page-background">
             <Routes>
+            <Route
+                path=''
+                element={
+                  isMobile ? (
+                    <App_Profile_Card
+                      isMobile={isMobile}
+                      handleMenuChange={handleMenuChange}
+                      activeRoute={activeRoute}
+                    />
+                  ) : (
+                    <></>
+                  )
+                }
+              />
               <Route
                 path={App_Routes.ROOT}
                 element={

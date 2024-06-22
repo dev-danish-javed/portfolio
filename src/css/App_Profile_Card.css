@@ -44,10 +44,20 @@
 
     .profile-card img {
         height: 55vh;
-    }
+    }    
+}
 
+@media (min-width: 500px) and (max-width: 850px) {
+    .profile-card{
+        font-size: 1.5rem;
+    }
     .profile-card .name {
         font-weight: 300;
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    .profile-card a i {
+        font-size: 2rem;
     }
 }
+  

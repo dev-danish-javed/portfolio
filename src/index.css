@@ -149,17 +149,30 @@
       transform: translateX(-0.5rem);
   }
 }
-@media all and (max-width:800px) {
-
-  /* put your css styles in here */
+@media all and (max-width:850px) {
   .app {
     height: unset;
     margin-top: 0;
     margin-bottom: 0;
   }
   .page-item{
-    width: 95vw ;
-    height: 85vh;    
+    min-width: 95vw;
+    min-height: 82vh;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+}
+
+@media all and (max-width:800px) {
+  .app {
+    height: unset;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .page-item{
+    max-width: 95vw;
+    min-height: 80vh;
+    max-height: 80vh;
     overflow-y: auto;
   }
 }

@@ -45,7 +45,7 @@ class App_Profile_Card extends React.Component {
           <div className="name text-nowrap text-truncate">Danish Javed</div>
           <div className="d-flex justify-content-center gap-4 py-2 fs-5">
             <a
-              href="https://github.com/mr-danish-javed"
+              href="https://github.com/dev-danish-javed"
               title="Github"
               target={"_blank"} rel={"noreferrer"}
             >
@@ -59,7 +59,7 @@ class App_Profile_Card extends React.Component {
               <i className="fa-brands fa-hackerrank"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/mr-danish/"
+              href="https://www.linkedin.com/in/dev-danish-javed/"
               title="LinkedIn"
               target={"_blank"} rel={"noreferrer"}
             >
@@ -78,7 +78,7 @@ class App_Profile_Card extends React.Component {
             <a
               className="col-8 border-top fw-bold py-3 text-decoration-none text-dark pointer-event"
               href={resume}
-              download="Danish Javed Resume"
+              download="Danish Javed Resume.pdf"
             >
               DOWNLOAD RESUME <i className="fa-solid fa-download"></i>
             </a>
@@ -94,9 +94,9 @@ class App_Profile_Card extends React.Component {
           <Link
             to={App_Routes.ABOUT}
             onClick={() => this.props.handleMenuChange(App_Routes.ABOUT)}
-            className="d-flex justify-content-end text-end"
+            className="d-flex justify-content-end text-end py-2"
           >
-            <div className="rounded rounded-pill border border-2 px-3 border-dark bg-gradient bg-black">
+            <div className="rounded rounded-pill border border-2 px-3 border-dark bg-gradient bg-black mb-2">
               <span className="fs-5 me-4">Know me more</span>
               <i className="fa-solid fa-arrow-right fs-2"></i>
             </div>

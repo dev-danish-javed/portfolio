@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import vibrateDevice from "../utils/VibrateDevices";
 import resume from "./../assets/Docs/Danish Javed Resume.pdf";
 import "./../css/App_Contact.css";
+import { Link } from "react-router-dom";
 const App_Contact = ({ activeRoute, handleMenuChange }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -66,7 +67,8 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
           <div className="text-center">
             <a
               href="https://goo.gl/maps/D8mffzbxZgtD2FcC7"
-              target={"_blank"} rel={"noreferrer"}
+              target={"_blank"}
+              rel={"noreferrer"}
               className="text-secondary fw-bold text-decoration-none"
             >
               <i className="fa-solid fa-location-dot"></i> Noida, India
@@ -85,7 +87,8 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             </div>
             <a
               href="https://www.linkedin.com/in/mr-danish/"
-              target={"_blank"} rel={"noreferrer"}
+              target={"_blank"}
+              rel={"noreferrer"}
               className="mt-2 btn btn-sm btn-outline-secondary w-100 rounded rounded-pill"
             >
               <i className="fa-brands fa-linkedin"></i> LinkedIn
@@ -93,7 +96,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               className="btn btn-sm border-accent text-color-accent shadow-sm fw-semibold w-100 rounded rounded-pill d-block d-md-none"
               href={resume}
-              download="Danish Javed Resume"
+              download="Danish Javed Resume.pdf"
             >
               <i className="fa-solid fa-download"></i> Resume
             </a>
@@ -137,7 +140,8 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               <a
                 href={getMessage("whatsapp")}
                 className="align-self-end btn rounded rounded-pill shadow-sm text-dark"
-                target={"_blank"} rel={"noreferrer"}
+                target={"_blank"}
+                rel={"noreferrer"}
               >
                 <i className="fa-brands fa-whatsapp"></i> Whatsapp
               </a>
@@ -148,8 +152,18 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
                 Send <i className="fa-solid fa-paper-plane"></i>
               </a>
             </div>
-          </div>
+          </div>          
         </div>
+        <div className="mt-3">
+            <a
+              className="btn btn-sm border-accent text-color-accent shadow-sm py-2
+                        fw-semibold w-100 rounded rounded-pill d-none d-md-block d-lg-none"
+              href={resume}
+              download="Danish Javed Resume.pdf"
+            >
+              <i className="fa-solid fa-download"></i> Resume
+            </a>
+          </div>
       </div>
     </div>
   );
