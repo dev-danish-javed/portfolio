@@ -17,7 +17,7 @@
 .profile-card img {
     height: 50vh;
     filter: drop-shadow(-1rem 0 1rem rgba(0, 0, 0, 0.5));
-    transform: translateX(-1rem);
+    /* transform: translateX(-1rem); */
 }
 
 .profile-card .name {
