@@ -21,8 +21,9 @@
 }
 
 .profile-card .name {
-    font-weight: 100;
+    font-weight: 600;
     font-size: 3rem;
+    font-family: "Bruno Ace SC", sans-serif;
 }
 
 .about-redirect-button a {
@@ -49,7 +50,12 @@
 
     .profile-card img {
         height: 55vh;
-    }    
+    }  
+    
+    .profile-card .name {
+        font-size: 3em;
+        padding: 0 15px;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 850px) {
@@ -58,7 +64,7 @@
     }
     .profile-card .name {
         font-weight: 300;
-        font-size: 5rem;
+        font-size: 18px !important;
     }
 
     .profile-card a i {
