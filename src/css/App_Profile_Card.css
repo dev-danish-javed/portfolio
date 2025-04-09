@@ -35,6 +35,11 @@
     vertical-align: text-bottom;
 }
 
+#blog-link{
+    background-color: var(--accent-shadow);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media all and (max-width:800px) {
 
     .profile-card {

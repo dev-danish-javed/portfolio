@@ -45,44 +45,40 @@ class App_Profile_Card extends React.Component {
             ></img>
           </div>
           <div className='name text-nowrap text-truncate'>Danish Javed</div>
-          <div className='d-flex justify-content-center gap-4 py-2 fs-5'>
+          <div className='d-flex justify-content-center align-items-center gap-4 py-2 fs-5'>
             <a
               href='https://github.com/dev-danish-javed'
               title='Github'
               target={'_blank'}
               rel={'noreferrer'}
+              className='fs-4'
             >
               <i className='fa-brands fa-github'></i>
-            </a>
-            <a
-              href='https://www.hackerrank.com/Danish_Javed'
-              title='HackerRank'
-              target={'_blank'}
-              rel={'noreferrer'}
-            >
-              <i className='fa-brands fa-hackerrank'></i>
             </a>
             <a
               href='https://www.linkedin.com/in/devdanish/'
               title='LinkedIn'
               target={'_blank'}
               rel={'noreferrer'}
+              className='fs-4'
             >
               <i className='fa-brands fa-linkedin'></i>
             </a>
             <a
-              href='https://stackoverflow.com/users/11842836/danish-javed'
-              title='Stackoverflow'
+              id='blog-link'
+              href='https://technotes.devdanish.in/'
+              title='Blogs'
               target={'_blank'}
               rel={'noreferrer'}
+              className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
             >
-              <i className='fa-brands fa-stack-overflow'></i>
+              My Blogs <i class='fa-solid fa-arrow-up-right-from-square'></i>
             </a>
           </div>
           <div>{title}</div>
           <div className='d-flex justify-content-center'>
             <a
-              className='col-8 border-top fw-bold py-3 text-decoration-none text-dark pointer-event'
+              className='col-8 border-top fw-bold pt-2 pb-3 text-decoration-none text-dark pointer-event'
               href={resume}
               download='Danish Javed Resume.pdf'
             >
