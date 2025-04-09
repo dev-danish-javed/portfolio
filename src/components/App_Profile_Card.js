@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import App_Routes from '../App_Routes';
 import profileTexts from '../utils/Profile_Texts';
 import resume from './../assets/Docs/Danish Javed Resume.pdf';
-import my_pic from './../assets/images/My Pic.png';
+import my_pic from './../assets/images/My Pic 2.png';
 import './../css/App_Profile_Card.css';
 
 class App_Profile_Card extends React.Component {
