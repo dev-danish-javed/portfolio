@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes, useLocation, useNavigate} from "react-router-dom";
 import "./App.css";
 import App_Routes from "./App_Routes";
 import App_About from "./components/App_About";
@@ -21,6 +21,8 @@ import Project_My_Space from "./components/experienceComponents/projectComponent
 import Project_Portfolio from "./components/experienceComponents/projectComponents/Project_Portfolio";
 import Project_Baan_Baini from "./components/experienceComponents/projectComponents/Project_Baan_Baini";
 
+import LoadingBar from 'react-top-loading-bar';
+import { useRef } from 'react';
 function App() {
   const [activeRoute, setActiveRoute] = useState(window.location.pathname);
 
@@ -39,9 +41,27 @@ function App() {
       handleMenuChange(window.location.pathname);
   });
 
+    const location = useLocation();
+    const ref = useRef(null);
+    // Trigger the loading bar on route changes
+    useEffect(() => {
+        // Start the loading bar when the route changes
+        ref.current?.continuousStart();
+
+        // Simulate a complete loading after 1.5 seconds (for demo purposes)
+        const timer = setTimeout(() => {
+            ref.current?.complete();
+        }, 1500); // Adjust this to fit the actual loading time (e.g., based on API calls)
+
+        return () => {
+            clearTimeout(timer); // Clean up timeout on component unmount
+        };
+    }, [location]);
+
   return (
     <div className="app-container d-flex flex-column flex-lg-row justify-content-between gap-2">
-      <div className="bg-bubbles mx-auto vh-100 d-flex flex-wrap">
+
+        <div className="bg-bubbles mx-auto vh-100 d-flex flex-wrap">
         {bubbles}
       </div>
       <div className="position-absolute vw-100">
@@ -59,6 +79,7 @@ function App() {
           </div>
           <div className="mt-3 mt-lg-0 rounded-3 align-self-center overflow-hidden">
             <div className="page-background">
+                <LoadingBar color="#4c7753" height={5}  shadow={false} loaderSpeed={1000} ref={ref} />
             <Routes>
             <Route
                 path=''
