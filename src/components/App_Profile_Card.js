@@ -31,28 +31,28 @@ class App_Profile_Card extends React.Component {
     return (
       <>
         <div
-          className={
-            (this.props.isMobile ? 'page-item ' : '') +
-            'profile-card bg-light h-100 text-center rounded rounded-3 d-flex flex-column justify-content-between'
-          }
+            className={
+                (this.props.isMobile ? 'page-item ' : '') +
+                'profile-card bg-light h-100 text-center rounded rounded-3 d-flex flex-column justify-content-between'
+            }
         >
           <div className='profile-image-container rounded rounded-3'>
             <img
-              src={my_pic}
-              id='profile-pic'
-              className=''
-              alt='profile-pic'
+                src={my_pic}
+                id='profile-pic'
+                className=''
+                alt='profile-pic'
             ></img>
           </div>
           <div className='name text-nowrap text-truncate'>Danish Javed</div>
-          <div className='d-flex justify-content-center align-items-center gap-4 py-2 fs-5'>
+          <div className='d-md-flex d-flex justify-content-center align-items-center gap-4 py-2 fs-5'>
             <a
                 id='github-link'
                 href='https://github.com/dev-danish-javed'
                 title='Github'
                 target={'_blank'}
                 rel={'noreferrer'}
-                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
+                className=' shadow-sm  fw-md-semibold fw-bold  rounded-pill px-3 text-white py-1'
             >
               GitHub <i className='fa-brands fa-github'></i>
             </a>
@@ -62,7 +62,7 @@ class App_Profile_Card extends React.Component {
                 title='LinkedIn'
                 target={'_blank'}
                 rel={'noreferrer'}
-                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
+                className=' shadow-sm  fw-md-semibold fw-bold  rounded-pill px-3 text-white py-1'
             >
               LinkedIn <i className='fa-brands fa-linkedin'></i>
             </a>
@@ -72,7 +72,7 @@ class App_Profile_Card extends React.Component {
                 title='Blogs'
                 target={'_blank'}
                 rel={'noreferrer'}
-                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
+                className=' shadow-sm  fw-md-semibold fw-bold  rounded-pill px-3 text-white py-1'
             >
               My Blogs <i className='fa-solid fa-arrow-up-right-from-square'></i>
             </a>
@@ -89,16 +89,16 @@ class App_Profile_Card extends React.Component {
           </div>
         </div>
         <div
-          className={
-            this.props.isMobile
-              ? 'about-redirect-button mt-3 me-3 fw-bolder text-end'
-              : 'd-none'
-          }
+            className={
+              this.props.isMobile
+                  ? 'about-redirect-button mt-3 me-3 fw-bolder text-end'
+                  : 'd-none'
+            }
         >
           <Link
-            to={App_Routes.ABOUT}
-            onClick={() => this.props.handleMenuChange(App_Routes.ABOUT)}
-            className='d-flex justify-content-end text-end py-2'
+              to={App_Routes.ABOUT}
+              onClick={() => this.props.handleMenuChange(App_Routes.ABOUT)}
+              className='d-flex justify-content-end text-end py-2'
           >
             <div className='rounded rounded-pill border border-2 px-3 border-dark bg-gradient bg-black mb-2'>
               <span className='fs-5 me-4'>Know me more</span>

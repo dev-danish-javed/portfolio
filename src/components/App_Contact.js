@@ -78,17 +78,15 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             </a>
           </div>
         </div>
-        <div className='fs-5 text-center lead text-dark opacity-75 fw-semibold'>
-         <blockquote>
-           Code, collab, or coffee? Shoot me a mail below, let’s grow together.
-         </blockquote>
+        <div className='fs-5 mb-3 text-center text-dark opacity-75 fw-semibold border-2 py-3 border-top border-bottom'>
+          Code, collab, or coffee? Shoot me a mail below, let’s grow together.
         </div>
         <div className='d-flex justify-content-around align-items-center gap-4 px-2 gap-md-5 flex-wrap'>
           <div className=''>
-            <div className='border-accent border-0 border-lg-0 mb-2 rounded rounded-xl py-3 px-3'>
+            <div className='border-accent border-0 border-lg-0 mb-2 rounded rounded-xl'>
               <TextField
                   id='subject'
-                  label='Name'
+                  label='Your Name'
                   variant='standard'
                   size='small'
                   color='success'
@@ -103,7 +101,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
                   variant='standard'
                   size='small'
                   color='success'
-                  className='w-100'
+                  className='w-100 mt-2'
                   onChange={(e) => {
                     setMessage(e.target.value);
                   }}
@@ -129,16 +127,16 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
                         description: "Take next step and send me the mail.",
                       })
                     }}
-                    className='align-self-end btn rounded rounded-pill shadow-sm text-dark '
+                    className='text-nowrap  align-self-end btn rounded rounded-pill shadow-sm text-dark '
                     // target={'_blank'}
                     // rel={'noreferrer'}
                 >
-                  dev.danish.javed@gmail.com <i className='fa-solid fa-copy'></i>
+                <small>dev.danish.javed@gmail.com <i className='fa-solid fa-copy'></i></small>
                 </button>
                 <Toaster />
                 <a
                     href={getMessage('mail')}
-                    className='align-self-end btn rounded rounded-pill border border-dark shadow-top-bottom-only'
+                    className='text-nowrap align-self-end btn rounded rounded-pill border border-dark shadow-top-bottom-only'
                 >
                   Send <i className='fa-solid fa-envelope shadow-none'></i>
                 </a>
@@ -148,13 +146,13 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
                 href='https://www.linkedin.com/in/devdanish'
                 target={'_blank'}
                 rel={'noreferrer'}
-                className='mt-2 d-lg-none btn btn-sm btn-outline-secondary w-100 rounded rounded-pill'
+                className='mt-4 d-lg-none btn btn-outline-dark w-100 rounded rounded-pill'
             >
               <i className='fa-brands fa-linkedin'></i> LinkedIn
             </a>
             <Link
-                className='btn btn-sm border-accent text-color-accent shadow-sm
-                fw-semibold w-100 rounded rounded-pill d-block d-lg-none mt-3'
+                className='btn border-accent text-color-accent shadow-sm
+                fw-semibold w-100 rounded rounded-pill d-block d-lg-none my-3'
                 href={resume}
                 download='Danish Javed Resume.pdf'
             >

@@ -171,8 +171,8 @@
   }
   .page-item{
     max-width: 95vw;
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 85dvh;
+    max-height: 90vh;
     overflow-y: auto;
   }
 }
