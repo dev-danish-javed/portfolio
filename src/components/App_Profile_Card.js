@@ -47,40 +47,42 @@ class App_Profile_Card extends React.Component {
           <div className='name text-nowrap text-truncate'>Danish Javed</div>
           <div className='d-flex justify-content-center align-items-center gap-4 py-2 fs-5'>
             <a
-              href='https://github.com/dev-danish-javed'
-              title='Github'
-              target={'_blank'}
-              rel={'noreferrer'}
-              className='fs-4'
+                id='github-link'
+                href='https://github.com/dev-danish-javed'
+                title='Github'
+                target={'_blank'}
+                rel={'noreferrer'}
+                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
             >
-              <i className='fa-brands fa-github'></i>
+              GitHub <i className='fa-brands fa-github'></i>
             </a>
             <a
-              href='https://www.linkedin.com/in/devdanish/'
-              title='LinkedIn'
-              target={'_blank'}
-              rel={'noreferrer'}
-              className='fs-4'
+                id='linkedIn-link'
+                href='https://www.linkedin.com/in/devdanish/'
+                title='LinkedIn'
+                target={'_blank'}
+                rel={'noreferrer'}
+                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
             >
-              <i className='fa-brands fa-linkedin'></i>
+              LinkedIn <i className='fa-brands fa-linkedin'></i>
             </a>
             <a
-              id='blog-link'
-              href='https://technotes.devdanish.in/'
-              title='Blogs'
-              target={'_blank'}
-              rel={'noreferrer'}
-              className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
+                id='blog-link'
+                href='https://technotes.devdanish.in/'
+                title='Blogs'
+                target={'_blank'}
+                rel={'noreferrer'}
+                className='font-medium shadow-sm  fw-md-semibold fw-bold fs-6 rounded-pill px-3 text-white py-1'
             >
-              My Blogs <i class='fa-solid fa-arrow-up-right-from-square'></i>
+              My Blogs <i className='fa-solid fa-arrow-up-right-from-square'></i>
             </a>
           </div>
           <div>{title}</div>
           <div className='d-flex justify-content-center'>
             <a
-              className='col-8 border-top fw-bold pt-2 pb-3 text-decoration-none text-dark pointer-event'
-              href={resume}
-              download='Danish Javed Resume.pdf'
+                className='col-8 border-top fw-bold pt-2 pb-3 text-decoration-none text-dark pointer-event'
+                href={resume}
+                download='Danish Javed Resume.pdf'
             >
               DOWNLOAD RESUME <i className='fa-solid fa-download'></i>
             </a>
