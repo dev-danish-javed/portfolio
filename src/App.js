@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import {Route, Routes, useLocation, useNavigate} from "react-router-dom";
 import "./App.css";
 import App_Routes from "./App_Routes";
@@ -60,7 +61,7 @@ function App() {
 
   return (
     <div className="app-container d-flex flex-column flex-lg-row justify-content-between gap-2">
-
+        <Analytics mode="production" />
         <div className="bg-bubbles mx-auto vh-100 d-flex flex-wrap">
         {bubbles}
       </div>
