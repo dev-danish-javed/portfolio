@@ -12,10 +12,10 @@ const App_About = ({ activeRoute, handleMenuChange }) => {
     }
   }
   let aboutItems = [
-    new AboutItem("EXPERIENCE", "2 years"),
+    new AboutItem("EXPERIENCE", "5 years"),
     new AboutItem("PROFILE", "Java Full Stack Dev."),
     new AboutItem("RESIDENCE", "Noida, India"),
-    new AboutItem("AGE", "25 years"),
+    new AboutItem("AGE", "28 years"),
   ];
 
   aboutItems = aboutItems.map((item, index) => (

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="539640a4-9bd6-472e-a265-dfb7d34dfd45" name="Changes" comment="Adds top load bar">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App_About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App_About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App_Profile_Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App_Profile_Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App_Profile_Card.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App_Profile_Card.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <workItem from="1766818174541" duration="576000" />
       <workItem from="1766818801590" duration="665000" />
       <workItem from="1766820839480" duration="139000" />
-      <workItem from="1766820997136" duration="617000" />
+      <workItem from="1766820997136" duration="1939000" />
     </task>
     <servers />
   </component>

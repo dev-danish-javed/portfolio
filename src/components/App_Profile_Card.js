@@ -45,7 +45,7 @@ class App_Profile_Card extends React.Component {
             ></img>
           </div>
           <div className='name text-nowrap text-truncate'>Danish Javed</div>
-          <div className='d-md-flex d-flex justify-content-around align-items-center py-2 fs-6'>
+          <div id ="tags" className='d-md-flex d-flex justify-content-around align-items-center py-2'>
             <a
                 id='github-link'
                 href='https://github.com/dev-danish-javed'
